@@ -49,3 +49,20 @@ footer{
 .footer_div{
     margin-bottom:20px;
 }
+
+/* about.html */
+
+.info{
+    padding: 30px;
+    line-height: 2;
+}
+.title, .sub_title{
+    text-align: center;
+}
+.title{
+    text-shadow: 2px 2px rgb(7, 243, 231);
+}
+.sub_title{
+    font-style: italic;
+    font-size: large;
+}
