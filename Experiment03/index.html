@@ -3,39 +3,377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <title>Factorial/Even-Odd</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Beany Business</title>
 </head>
 <body>
-    <div style="margin-left:50px; margin-top:60px;">
-        <div>
-            <h3>Find Factorial of any number :</h3>
-            <p>*Default is 0</p>
-            <label for="num">Enter one number: </label>
-            <input type="number" id="num" min="0" required><br>
-    
-            <button onclick="Fact();">Click</button><br>
-    
-            <label for="fact" id="label" style="margin-top: 15px; visibility:hidden;">Factorial of the entered number:</label>
-            <input type="number" id="fact" style="margin-top: 15px; visibility:hidden;">
-    
+    <nav class="navbar-expand-lg navbar navbar-custom p-3">
+        <a class="navbar-brand pt-3 " href="index.html">
+            <img src="./images/favicon.ico" width="40" height="40" class="d-inline-block align-top " alt="">
+            Beany Business</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link mt-1" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mt-1" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mt-1" href="#footer">Contact Us</a>
+                </li>
+            </ul>
         </div>
-        
-        <!-- even-odd -->
-        <div style="margin-top: 30px;">
-            <h3>Check if the number is even or odd in a particular interval :</h3>
-            
-            <label for="one">Enter 1st number: </label>
-            <input type="number" id="one" min="0" required><br>
+    </nav>
+
+
+    <!-- main content -->
+    <!-- 1 -->
+    <div class="container card main">
+        <div class="row">
+            <div class="col-xs-12 col-xs-offset-4 col-sm-12 col-md-6 col-lg-7">
+                <h1 >Fifty Five East</h1>
+                <p>Local cuisine, Asian, Indian, International, Healthy, Vegetarian Friendly :)</p>
+
+                <!-- rating -->
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/> 
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/> 
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/> 
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/>
+                <img src="https://img.icons8.com/office/16/000000/star-half-empty.png" class="mb-1"/>
+                <hr>
+
+                <img src="https://img.icons8.com/material-sharp/15/000000/quote-left.png"/>
+                Blown away by the food, Both the variety and the depth. <br> 
+                <img src="https://img.icons8.com/material-sharp/15/000000/quote-left.png"/>
+                I especially enjoyed the Indian style fried chicken. <br> 
+                <img src="https://img.icons8.com/material-sharp/15/000000/quote-left.png"/>
+                Would definitely come back. <br>
+                <hr>
+
+                <p>Ranked <b>#6</b> of 14,609 <a href="https://www.tripadvisor.in/Restaurants-g304554-Mumbai_Maharashtra.html" target="_blank">Restaurants in Mumbai</a></p>
+                <table>
+                    <tr>
+                        <td><img src="https://img.icons8.com/windows/32/000000/cutlery.png" class="mr-2"/></td>
+                        <td>Food:</td>
+                        <td>4.5/5</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.icons8.com/fluent-systems-filled/25/000000/service-bell.png" class="ml-1 mr-2"/></td>
+                        <td> Service:</td>
+                        <td>4.3/5</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.icons8.com/metro/18/000000/wallet.png" class="ml-1 mr-2"/></td>
+                        <td> Price Range:</td>
+                        <td>₹ 2000 - ₹ 3498</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.icons8.com/ios-filled/28/000000/clouds.png" class="mr-2"/></td>
+                        <td>Atomsphere:</td>
+                        <td>Excellent</td>
+                    </tr>
+                </table>
+            </div>
     
-            <label for="two" style="margin-top: 15px;">Enter 2nd number: </label>
-            <input type="number" id="two" min="0" required style="margin-top: 15px;"><br>
-    
-            <button onclick="Even_Odd();" style="margin-top: 15px;">Click</button> <br><br>
-    
-            ODD: <p id="odd" style="margin-top: 15px;"> </p><br>
-            EVEN: <p id="even" style="margin-top: 15px;"> </p>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+                <!-- image -->
+                <a href="https://www.tripadvisor.in/Restaurant_Review-g304554-d1812889-Reviews-Fifty_Five_East-Mumbai_Maharashtra.html" target="_blank" class="center">
+                    <img src="./images/55-east.jpg" alt="" width="400"  class="img-fluid">
+                </a>
+                <!-- location -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/android/20/000000/marker.png"/>    
+                    <a href="https://goo.gl/maps/fH1THg3j75DYwpMf7" target="_blank">
+                        Off Western Express Highway, Santacruz East, Grand Hyatt Hotel, Lobby Level, Mumbai 400055 India
+                    </a>
+                </p>
+                <!-- nearest distance -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/fluent-systems-filled/22/000000/real-estate.png"/>
+                    Santacruz East, <br>
+                    <b>4.2 km</b> from Juhu Beach.
+                </p> 
+                <!-- phone   -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/material-rounded/20/000000/phone--v1.png"/>
+                    <a href="tel:+91 22 6676 1149">+91 22 6676 1149</a>
+                </p>
+                <!-- website -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/material/20/000000/domain--v1.png"/>
+                    <a href="https://www.hyatt.com/en-US/hotel/india/grand-hyatt-mumbai/mumgh/dining" target="_blank">Website</a>
+                </p>
+            </div>
         </div>
     </div>
+
+
+    <!-- 2 -->
+    <div class="container card main">
+        <div class="row">
+            <div class="col-xs-12 col-xs-offset-4 col-sm-12 col-md-6 col-lg-7">
+                <h1 >The Peshwa Pavilion</h1>
+                <p>Indian, Asian, Vegetarian Friendly :)</p>
+
+                <!-- rating -->
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/> 
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/> 
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/> 
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/>
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/> 
+                <hr>
+
+                <img src="https://img.icons8.com/material-sharp/15/000000/quote-left.png"/>
+                Great Variety and choice.Value for money, when you enjoy a good buffet spread. <br>
+                <img src="https://img.icons8.com/material-sharp/15/000000/quote-left.png"/>
+                The food served for breakfast was great with a wide variety to choose from. The service rendered was also amazing, especially from Ashkyaa and Amit. <br>
+                <img src="https://img.icons8.com/material-sharp/15/000000/quote-left.png"/>
+                Though food was good but prices were exorbitant, it was shock seeing such a fat bill that too Vegetarian..anyway we enjoyed all the same. 
+                <hr>
+
+
+                <p>Ranked <b>#3</b> of 8,616 <a href="https://www.tripadvisor.in/Restaurants-g304554-Mumbai_Maharashtra.html" target="_blank">Restaurants in Mumbai</a></p>
+                <table>
+                    <tr>
+                        <td><img src="https://img.icons8.com/windows/32/000000/cutlery.png" class="mr-2"/></td>
+                        <td>Food:</td>
+                        <td>5/5</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.icons8.com/fluent-systems-filled/25/000000/service-bell.png" class="ml-1 mr-2"/></td>
+                        <td> Service:</td>
+                        <td>4.8/5</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.icons8.com/metro/18/000000/wallet.png" class="ml-1 mr-2"/></td>
+                        <td> Price Range:</td>
+                        <td> ₹4,000 - ₹5,000 </td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.icons8.com/ios-filled/28/000000/clouds.png" class="mr-2"/></td>
+                        <td>Atomsphere:</td>
+                        <td>Calm, Beautiful</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+                <!-- image -->
+                <a href="https://www.tripadvisor.in/Restaurant_Review-g304554-d5913048-Reviews-The_Peshwa_Pavilion-Mumbai_Maharashtra.html" target="_blank">
+                    <img src="./images/peshwa_pavelion" alt="" width="400" class="img-fluid">
+                </a>
+                <!-- location -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/android/20/000000/marker.png"/>    
+                    <a href="https://goo.gl/maps/LXYEfK6jnoywoc3M8" target="_blank">
+                        Sahar Road ITC Maratha, Andheri East, Mumbai 400069 India
+                    </a>
+                </p>
+                <!-- nearest distance -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/fluent-systems-filled/22/000000/real-estate.png"/>
+                    Western Suburbs, <br>
+                    <b>4.8 km</b>  from Juhu Beach.
+                </p> 
+                <!-- phone   -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/material-rounded/20/000000/phone--v1.png"/>
+                    <a href="tel:+91 22 4034 1877">+91 22 4034 1877</a>
+                </p>
+                <!-- website -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/material/20/000000/domain--v1.png"/>
+                    <a href="https://www.itchotels.in/hotels/itcmaratha/the-peshwa-pavilion-restaurant.aspx" target="_blank">Website</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="container card main">
+        <div class="row">
+            <div class="col-xs-12 col-xs-offset-4 col-sm-12 col-md-6 col-lg-7">
+                <h1 >Lake View Cafe</h1>
+                <p>Indian, Cafe, Asian, International :)</p>
+
+                <!-- rating -->
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/> 
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/> 
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/> 
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/>
+                <img src="https://img.icons8.com/office/16/000000/star-half-empty.png" class="mb-1"/> 
+                <hr>
+
+                <img src="https://img.icons8.com/material-sharp/15/000000/quote-left.png"/>
+                Every one having nice social distance. Staff is very friendly lake view cafe is the best team.. Will visit again..  <br>
+                <img src="https://img.icons8.com/material-sharp/15/000000/quote-left.png"/>
+                We visited the lake view cafe for lunch and were very impressed with the way things were managed during this critical time. The experience of dining after 6 months was much appreciated. <br>
+                <img src="https://img.icons8.com/material-sharp/15/000000/quote-left.png"/>
+                I visited the restaurant as it was my daughter's birthday . This place is great! Atmosphere is chill and cool also the staff is really friendly. 
+                <hr>
+
+
+                <p>Ranked <b>#5</b> of 8,616 <a href="https://www.tripadvisor.in/Restaurants-g304554-Mumbai_Maharashtra.html" target="_blank">Restaurants in Mumbai</a></p>
+                <table>
+                    <tr>
+                        <td><img src="https://img.icons8.com/windows/32/000000/cutlery.png" class="mr-2"/></td>
+                        <td>Food:</td>
+                        <td>4.8/5</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.icons8.com/fluent-systems-filled/25/000000/service-bell.png" class="ml-1 mr-2"/></td>
+                        <td> Service:</td>
+                        <td>5/5</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.icons8.com/metro/18/000000/wallet.png" class="ml-1 mr-2"/></td>
+                        <td> Price Range:</td>
+                        <td>₹ 1,500 - ₹ 2,595</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.icons8.com/ios-filled/28/000000/clouds.png" class="mr-2"/></td>
+                        <td>Atomsphere:</td>
+                        <td>Relaxing and Kid-friendly</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+                <!-- image -->
+                <a href="https://www.tripadvisor.in/Restaurant_Review-g304554-d1957837-Reviews-Lake_View_Cafe-Mumbai_Maharashtra.html" target="_blank">
+                    <img src="./images/lake_view_cafe.jpg" alt="" width="400" class="img-fluid">
+                </a>
+                <!-- location -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/android/20/000000/marker.png"/>    
+                    <a href="https://goo.gl/maps/4tS33pTLYPQrWpLp6" target="_blank">
+                        Aarey Powai Road Renaissance Hotel & Convention Centre, Mumbai 400087 India
+                    </a>
+                </p>
+                <!-- nearest distance -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/fluent-systems-filled/22/000000/real-estate.png"/>
+                    Eastern Suburbs, <br>
+                    <b>1.0 km</b>  from Powai Lake.
+                </p> 
+                <!-- phone   -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/material-rounded/20/000000/phone--v1.png"/>
+                    <a href="tel:+91 22 6692 7550">+91 22 6692 7550</a>
+                </p>
+                <!-- website -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/material/20/000000/domain--v1.png"/>
+                    <a href="https://www.marriott.com/hotels/hotel-information/restaurant/bombr-renaissance-mumbai-convention-centre-hotel/" target="_blank">Website</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 4 -->
+    <div class="container card main">
+        <div class="row">
+            <div class="col-xs-12 col-xs-offset-4 col-sm-12 col-md-6 col-lg-7">
+                <h1 >Sea Lounge</h1>
+                <p>Local cuisine, Indian, International, Vegetarian Friendly, Vegan Options :)</p>
+
+                <!-- rating -->
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/> 
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/> 
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/> 
+                <img src="https://img.icons8.com/office/16/000000/filled-star.png" class="mb-1"/>
+                <img src="https://img.icons8.com/office/16/000000/star-half-empty.png" class="mb-1"/> 
+                <hr>
+
+                <img src="https://img.icons8.com/material-sharp/15/000000/quote-left.png"/>
+                Afternoon tea in the Sea Lounge at the Taj Hotel was worth every rupee. We had window seats. Outstanding service!!<br>
+                <img src="https://img.icons8.com/material-sharp/15/000000/quote-left.png"/>
+                Classic British afternoon tea with a brilliant Indian twist. <br>
+                <img src="https://img.icons8.com/material-sharp/15/000000/quote-left.png"/>
+                Beautiful setting with views over the sea and Gateway to India monument. Hi tea is between 3.00 and 6.30 and is ideal for anyone that does NOT then want to have an evening meal! The choice is amazing- home made chocolates, pastries, sandwiches and 'meals'. <br>    
+                <hr>
+
+
+                <p>Ranked <b>#60</b> of 8,616 <a href="https://www.tripadvisor.in/Restaurants-g304554-Mumbai_Maharashtra.html" target="_blank">Restaurants in Mumbai</a></p>
+                <table>
+                    <tr>
+                        <td><img src="https://img.icons8.com/windows/32/000000/cutlery.png" class="mr-2"/></td>
+                        <td>Food:</td>
+                        <td>4.2/5</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.icons8.com/fluent-systems-filled/25/000000/service-bell.png" class="ml-1 mr-2"/></td>
+                        <td> Service:</td>
+                        <td>4.9/5</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.icons8.com/metro/18/000000/wallet.png" class="ml-1 mr-2"/></td>
+                        <td> Price Range:</td>
+                        <td>₹ 1,000 - ₹ 5,000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.icons8.com/ios-filled/28/000000/clouds.png" class="mr-2"/></td>
+                        <td>Atomsphere:</td>
+                        <td>Relaxing</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+                <!-- image -->
+                <a href="https://www.tripadvisor.in/Restaurant_Review-g304554-d812458-Reviews-Sea_Lounge-Mumbai_Maharashtra.html" target="_blank">
+                    <img src="./images/sea_lounge.jpg" alt="" width="400" class="img-fluid">
+                </a>
+                <!-- location -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/android/20/000000/marker.png"/>    
+                    <a href="https://goo.gl/maps/NbkyWWokkWTQaeP49" target="_blank">
+                        The Taj Mahal Palace Hotel, 1st Floor, Apollo Bunder, Colaba The Taj Mahal Palace, Mumbai, Mumbai 400001 India
+                    </a>
+                </p>
+                <!-- nearest distance -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/fluent-systems-filled/22/000000/real-estate.png"/>
+                    Wellington Pier, <br>
+                    <b>1.0 km</b>  from Gateway of India.
+                </p> 
+                <!-- phone   -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/material-rounded/20/000000/phone--v1.png"/>
+                    <a href="tel:+91 22 6665 3366">+91 22 6665 3366</a>
+                </p>
+                <!-- website -->
+                <p class="mt-3">
+                    <img src="https://img.icons8.com/material/20/000000/domain--v1.png"/>
+                    <a href="https://www.tajhotels.com/en-in/taj/taj-mahal-palace-mumbai/restaurants/sea-lounge-restaurant/?utm_source=Google&utm_Campaign=taj-taj-mahal-palace-mumbai-sea-lounge-restaurant&utm_medium=Local" target="_blank">Website</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="d-flex justify-content-center footer_div ">
+            <a href="https://www.instagram.com/" title="Instagram"> 
+                <img src="https://img.icons8.com/small/30/000000/instagram-new.png" class="mr-2"/>
+            </a>
+            <a href="https://www.facebook.com/" title="Facebook">
+                <img src="https://img.icons8.com/fluent-systems-regular/30/000000/facebook-new.png" class="mr-2"/>
+            </a>
+            <a href="https://twitter.com/" title="Twitter">
+                <img src="https://img.icons8.com/dotty/30/000000/twitter.png"/>
+            </a>    
+        </div>
+        <p class="center">&copy; 2020 Copyright: Clare Rebello | Student @ SFIT</p>
+    </footer>
 </body>
 </html>

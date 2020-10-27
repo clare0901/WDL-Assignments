@@ -1,0 +1,47 @@
+body {
+    background-image: url('./images/home_bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.navbar-custom { 
+    background-color: rgb(32, 20, 32);
+} 
+.nav-link, .navbar-brand, .nav-link:hover, .navbar-brand:hover{
+    color: whitesmoke;
+}
+.main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+q{
+    display: block;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+table{
+    border: 1px solid black;
+    margin: 20px;
+}
+td{
+    padding: 8px;
+}
+footer{
+    background-color: rgb(32, 20, 32);  
+    padding: 50px;
+}
+.center{
+    color: white;
+    text-align: center;
+}
+.footer_div{
+    margin-bottom:20px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Factorial/Even-Odd</title>
+</head>
+<body>
+    <div style="margin-left:50px; margin-top:60px;">
+        <div>
+            <h3>Find Factorial of any number :</h3>
+            <p>*Default is 0</p>
+            <label for="num">Enter one number: </label>
+            <input type="number" id="num" min="0" required><br>
+    
+            <button onclick="Fact();">Click</button><br>
+    
+            <label for="fact" id="label" style="margin-top: 15px; visibility:hidden;">Factorial of the entered number:</label>
+            <input type="number" id="fact" style="margin-top: 15px; visibility:hidden;">
+    
+        </div>
+        
+        <!-- even-odd -->
+        <div style="margin-top: 30px;">
+            <h3>Check if the number is even or odd in a particular interval :</h3>
+            
+            <label for="one">Enter 1st number: </label>
+            <input type="number" id="one" min="0" required><br>
+    
+            <label for="two" style="margin-top: 15px;">Enter 2nd number: </label>
+            <input type="number" id="two" min="0" required style="margin-top: 15px;"><br>
+    
+            <button onclick="Even_Odd();" style="margin-top: 15px;">Click</button> <br><br>
+    
+            ODD: <p id="odd" style="margin-top: 15px;"> </p><br>
+            EVEN: <p id="even" style="margin-top: 15px;"> </p>
+        </div>
+    </div>
+</body>
+</html>
