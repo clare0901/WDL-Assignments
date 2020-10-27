@@ -12,6 +12,13 @@ body {
 .nav-link, .navbar-brand, .nav-link:hover, .navbar-brand:hover{
     color: whitesmoke;
 }
+
+.navbar-toggler-icon {
+    color:white ;
+ }
+ .navbar-toggler{
+     background-color: black;
+ }
 .main{
     margin-top: 50px;
     margin-bottom: 50px;
