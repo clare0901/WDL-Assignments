@@ -1,0 +1,14 @@
+<!DOCTYPE document [  
+<!ELEMENT document (employee)*>  
+<!ELEMENT employee (empid, empname, salary, dob, doj, address, deptname, designation)>  
+<!ELEMENT empid (#PCDATA)>  
+<!ELEMENT empname (fname, lname)>  
+<!ELEMENT fname (#PCDATA)>  
+<!ELEMENT lname (#PCDATA)>  
+<!ELEMENT salary (#PCDATA)>  
+<!ELEMENT dob (#PCDATA)>  
+<!ELEMENT doj (#PCDATA)>  
+<!ELEMENT address (#PCDATA)>  
+<!ELEMENT deptname (#PCDATA)>  
+<!ELEMENT designation (#PCDATA)>  
+] > 
