@@ -1,4 +1,3 @@
-<!DOCTYPE document [  
 <!ELEMENT document (employee)*>  
 <!ELEMENT employee (empid, empname, salary, dob, doj, address, deptname, designation)>  
 <!ELEMENT empid (#PCDATA)>  
@@ -11,4 +10,4 @@
 <!ELEMENT address (#PCDATA)>  
 <!ELEMENT deptname (#PCDATA)>  
 <!ELEMENT designation (#PCDATA)>  
-] > 
+
